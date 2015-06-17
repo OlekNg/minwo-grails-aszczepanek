@@ -39,7 +39,7 @@
 						<label id="parking-label" class="control-label col-sm-3 property-label"><g:message code="car.parking.label" default="Parking" /></label>
 						<div class="col-sm-9">
 							
-								<span class="property-value" aria-labelledby="parking-label"><g:link controller="parking" action="show" id="${carInstance?.parking?.id}">${carInstance?.parking?.encodeAsHTML()}</g:link></span>
+								<p class="form-control-static property-value" aria-labelledby="parking-label"><g:link controller="parking" action="show" id="${carInstance?.parking?.id}">${carInstance?.parking?.encodeAsHTML()}</g:link></p>
 							
 						</div>
 					</div>
@@ -60,7 +60,7 @@
 				<g:form url="[resource:carInstance, action:'delete']" method="DELETE">
 					<fieldset class="buttons row">
 						<div class="col-sm-offset-3 col-sm-9">
-							<g:link class="edit btn btn-default" action="edit" resource="${carInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+							<g:link class="edit btn btn-default" action="edit" resource="${carInstance}"><span class="glyphicon glyphicon-pencil"></span><g:message code="default.button.edit.label" default="Edit" /></g:link>
 							<g:actionSubmit class="delete btn btn-default" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 						</div>
 					</fieldset>

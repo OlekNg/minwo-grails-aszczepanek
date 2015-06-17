@@ -19,7 +19,7 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<div class="col-sm-9">
-		<g:select id="parking" name="parking.id" from="${model.Parking.list()}" optionKey="id" required="" value="${carInstance?.parking?.id}" class="many-to-one"/>
+		<g:select id="parking" name="parking.id" from="${model.Parking.list()}" optionKey="id" required="" value="${carInstance?.parking?.id}" class="many-to-one form-control"/>
 
 	</div>
 </div>
