@@ -9,14 +9,12 @@
 	</label>
 	<div class="col-sm-9">
 		
-<ul class="one-to-many">
+<div class="list-group one-to-many">
 <g:each in="${parkingInstance?.cars?}" var="c">
-    <li><g:link controller="car" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
+    <g:link class="list-group-item" controller="car" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link>
 </g:each>
-<li class="add">
-<g:link controller="car" action="create" params="['parking.id': parkingInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'car.label', default: 'Car')])}</g:link>
-</li>
-</ul>
+<g:link class="list-group-item" controller="car" action="create" params="['parking.id': parkingInstance?.id]"><strong><span class="glyphicon glyphicon-plus"></span>${message(code: 'default.add.label', args: [message(code: 'car.label', default: 'Car')])}</strong></g:link>
+</div>
 
 
 	</div>
