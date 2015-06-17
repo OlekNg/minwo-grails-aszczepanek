@@ -25,7 +25,7 @@
 					</g:eachError>
 				</ul>
 				</g:hasErrors>
-				<g:form url="[resource:parkingInstance, action:'save']" >
+				<g:form class="form-horizontal" url="[resource:parkingInstance, action:'save']" >
 					<fieldset class="form">
 						<g:render template="form"/>
 					</fieldset>
