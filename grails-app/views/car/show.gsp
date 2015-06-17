@@ -60,7 +60,7 @@
 				<g:form url="[resource:carInstance, action:'delete']" method="DELETE">
 					<fieldset class="buttons row">
 						<div class="col-sm-offset-3 col-sm-9">
-							<g:link class="edit btn btn-default" action="edit" resource="${carInstance}"><span class="glyphicon glyphicon-pencil"></span><g:message code="default.button.edit.label" default="Edit" /></g:link>
+							<g:link class="edit btn btn-default" action="edit" resource="${carInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
 							<g:actionSubmit class="delete btn btn-default" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 						</div>
 					</fieldset>
