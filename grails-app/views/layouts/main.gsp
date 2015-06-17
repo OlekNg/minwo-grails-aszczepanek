@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="navbar navbar-default navbar-fixed-top">
+			<div class="navbar navbar-default navbar-inverse navbar-fixed-top">
 				<a class="navbar-brand" href="#">App for MiNWO by Aleksander Szczepanek</a>
 			</div>
 			<g:layoutBody/>
